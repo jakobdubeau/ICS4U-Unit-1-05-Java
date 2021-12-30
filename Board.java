@@ -40,9 +40,9 @@ final class Board {
         try {
 
             final Scanner scanner = new Scanner(System.in);
-            System.out.println("This program figures out the length of a wooden board"
-                + " that is 1 board foot in dimension."
-                + " (1 board foot is 144 inches³ of wood).");
+            System.out.println("This program figures out the length of a"
+                                + " wooden board that is one board foot"
+                                + " in dimension.");
 
             System.out.println("Enter the width(inch): ");
             final double widthInput;
@@ -52,8 +52,8 @@ final class Board {
             final double heightInput;
             heightInput = scanner.nextDouble();
 
-    final double calculate = boardfoot(heightInput, widthInput);
-    System.out.println("The wood should be " + calculate + " inch(es) long.");
+            final double calculate = boardfoot(heightInput, widthInput);
+            System.out.println("The wood should be " + calculate + " inch(es) long.");
 
         }
         catch (java.util.InputMismatchException errorCode) {
